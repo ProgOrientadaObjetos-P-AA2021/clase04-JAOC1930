@@ -25,18 +25,13 @@ public class Hospital {
     numeroEnfermeros: 200
     
     */
-    public String toString(){
-        String cadena = "";
-        nombre = "Jhoel";
-        ciudad = "Zamora";
-        numeroDoctores = 5;
-        numeroEnfermeros = 10;
-        cadena = String.format("%sNombre: %s\nCiudad: %s\nNumero doctores: %d\n"
-                + "Numero Enfermeros: %d",cadena, nombre, ciudad, numeroDoctores,
-                numeroEnfermeros);
-        return cadena;
+    public Hospital(){
+        nombre = "Isidro Ayora";
+        ciudad = "Loja";
+        numeroDoctores = 100;
+        numeroEnfermeros = 200;
     }
-    
+   
     public void establecerNombre(String n){
         nombre = n;
     }
@@ -67,6 +62,13 @@ public class Hospital {
     
     public int obtenerNumeroEnfermeros(){
         return numeroEnfermeros;
+    }
+    public String toString(){
+        String cadena = "";
+        cadena = String.format("%sNombre: %s\nCiudad: %s\nNumero doctores: %d\n"
+                + "Numero Enfermeros: %d",cadena, nombre, ciudad, numeroDoctores,
+                numeroEnfermeros);
+        return cadena;
     }
     
 }
